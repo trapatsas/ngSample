@@ -7,7 +7,7 @@
 
 <div data-ng-controller="AddController">
     <h4>The simplest adding machine ever</h4>
-    <button data-ng-click="add(1)" class="button">Add</button>
-    <a data-ng-click="subtract(1)" class="button alert">Subtract</a>
-    <h4>Current count: {{ counter }}</h4>
+    <button data-ng-click="add(1)" type="button" class="btn btn-info">Add</button>
+    <button data-ng-click="subtract(2)" type="button" class="btn btn-warning">Subtract</button>
+    <h4 id="getting-started">Current count: <span>{{ counter }}</span></h4>
 </div>

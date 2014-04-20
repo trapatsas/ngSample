@@ -15,3 +15,33 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* Getting started example */
+#getting-started{
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#getting-started span{
+    border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+
+    background-color: #333333;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 5px;
+}
