@@ -24,6 +24,18 @@ namespace NgSample
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                        "~/Scripts/angular.js",
+                        "~/Scripts/angular-route.js",
+                        "~/Scripts/angular-resource.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                        "~/Scripts/app/app.js",
+                        "~/Scripts/app/JsControllers/AddController.js",
+                        "~/Scripts/app/JsControllers/ClockController.js",
+                        "~/Scripts/app/JsControllers/HelloController.js"
+                        ));
+
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
             BundleTable.EnableOptimizations = true;

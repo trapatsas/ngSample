@@ -10,8 +10,18 @@ namespace NgSample.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
-
+            return View();
+        }
+        public ActionResult Calculator()
+        {
+            return View();
+        }
+        public ActionResult Clock()
+        {
+            return View();
+        }
+        public ActionResult Main()
+        {
             return View();
         }
     }

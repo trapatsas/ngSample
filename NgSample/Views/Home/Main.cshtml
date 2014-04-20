@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<h2>Main</h2>
+
+<div class="jumbotron" data-ng-controller="HelloController">
+    <h1>Wellcome, {{ person.name }} !</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+    <p><input data-ng-model="person.name" type="text" placeholder="Your name"></p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
+            a broad range of clients, including browsers and mobile devices. ASP.NET Web API
+            is an ideal platform for building RESTful applications on the .NET Framework.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Why AngularJS?</h2>
+        <p>HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.</p>
+        <p><a class="btn btn-default" href="https://angularjs.org/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Designed for everyone, everywhere.</h2>
+        <p>Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
+        <p><a class="btn btn-default" href="http://getbootstrap.com/">Learn more &raquo;</a></p>
+    </div>
+</div>
