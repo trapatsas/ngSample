@@ -6,7 +6,8 @@ appRoot
     .config(['$routeProvider', function ($routeProvider) {
         //Setup routes to load partial templates from server. TemplateUrl is the location for the server view (Razor .cshtml view)
         $routeProvider
-            .when('/home',  { templateUrl: '/home/main',        controller: 'HelloController'   })
+            .when('/home', { templateUrl: '/home/main', controller: 'HelloController' })
+            .when('/tree', { templateUrl: '/home/tree' })
             .when('/clock', { templateUrl: '/home/clock',       controller: 'ClockController'   })
             .when('/calc',  { templateUrl: '/home/calculator',  controller: 'AddController'     })
             .otherwise({ redirectTo: '/home' });

@@ -24,5 +24,9 @@ namespace NgSample.Controllers
         {
             return View();
         }
+        public ActionResult Tree()
+        {
+            return View();
+        }
     }
 }

@@ -548,6 +548,7 @@
     <Content Include="Views\Home\Clock.cshtml" />
     <Content Include="Views\Home\Calculator.cshtml" />
     <Content Include="Views\Home\Main.cshtml" />
+    <Content Include="Views\Home\Tree.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
