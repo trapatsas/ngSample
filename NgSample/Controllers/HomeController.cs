@@ -28,5 +28,9 @@ namespace NgSample.Controllers
         {
             return View();
         }
+        public ActionResult TreeNodes()
+        {
+            return View();
+        }
     }
 }

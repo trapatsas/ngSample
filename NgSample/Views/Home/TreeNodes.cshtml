@@ -1,0 +1,9 @@
+﻿
+@{
+    Layout = null;
+}
+
+<a href="#/tree">{{item.treenode}}</a>
+<ul>
+    <li ng-repeat="item in item.childnodes track by $index" ng-include="'/home/treenodes'"></li>
+</ul>

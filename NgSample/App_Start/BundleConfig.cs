@@ -33,7 +33,8 @@ namespace NgSample
                         "~/Scripts/app/app.js",
                         "~/Scripts/app/JsControllers/AddController.js",
                         "~/Scripts/app/JsControllers/ClockController.js",
-                        "~/Scripts/app/JsControllers/HelloController.js"
+                        "~/Scripts/app/JsControllers/HelloController.js",
+                        "~/Scripts/app/JsControllers/TreeController.js"
                         ));
 
             // Set EnableOptimizations to false for debugging. For more information,

@@ -1,45 +1,20 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
-<div class="tree">
+<div class="tree" ng-controller="TreeController">
     <ul>
         <li>
-            <a href="#/tree">Parent</a>
+            <a href="#/tree">{{treeClass.treenode}}</a>
             <ul>
-                <li>
-                    <a href="#/tree">Child</a>
-                    <ul>
-                        <li>
-                            <a href="#/tree">Grand Child</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#/tree">Child</a>
-                    <ul>
-                        <li><a href="#/tree">Grand Child</a></li>
-                        <li>
-                            <a href="#/tree">Grand Child</a>
-                            <ul>
-                                <li>
-                                    <a href="#/tree">Great Grand Child</a>
-                                </li>
-                                <li>
-                                    <a href="#/tree">Great Grand Child</a>
-                                </li>
-                                <li>
-                                    <a href="#/tree">Great Grand Child</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#/tree">Grand Child</a></li>
-                    </ul>
-                </li>
+                <li ng-repeat="item in treeClass.childnodes track by $index" ng-include="'/home/treenodes'"></li>
             </ul>
         </li>
     </ul>
 </div>
+<div>
+    <p><button data-ng-click="treeClass.addnode(50)" type="button" class="btn btn-info">Insert randon value in tree</button></p>
+</div>
 <div style="clear:both;"></div>
 <p></p>
+
