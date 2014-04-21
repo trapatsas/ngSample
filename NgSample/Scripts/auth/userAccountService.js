@@ -10,9 +10,9 @@
             getValues: getValues,
         };
         var serverBaseUrl = "";
+        var accessToken = "";
 
         return service;
-        var accessToken = "";
         function registerUser(userData) {
             var accountUrl = serverBaseUrl + "/api/Account/Register";
             var deferred = $q.defer();
