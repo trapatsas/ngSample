@@ -19,8 +19,9 @@
             <br />
             <div>
                 <input type="text" name="userName" placeholder="Name" data-ng-model="vm.userData.userName" />
-                <input name="password" placeholder="Password" data-ng-model="vm.userData.password" />
-                <input name="confirmPassword" placeholder="Password" data-ng-model="vm.userData.confirmPassword" />
+                <input type="email" name="email" placeholder="Email" data-ng-model="vm.userData.email" />
+                <input type="password" name="password" placeholder="Password" data-ng-model="vm.userData.password" />
+                <input type="password" name="confirmPassword" placeholder="Password" data-ng-model="vm.userData.confirmPassword" />
                 <input type="button" id="registerUser" value="Register" data-ng-click="vm.registerUser()" />
                 <input type="button" id="logniUser" value="Login" data-ng-click="vm.loginUser()" />
             </div>
