@@ -5,5 +5,5 @@
 
 <a href="#/tree">{{item.treenode}}</a>
 <ul>
-    <li ng-repeat="item in item.childnodes track by $index" ng-include="'/home/treenodes'"></li>
+    <li ng-repeat="item in item.childnodes track by $index" ng-include="'/home/treenodes'" ng-show="!!item.childnodes"></li>
 </ul>

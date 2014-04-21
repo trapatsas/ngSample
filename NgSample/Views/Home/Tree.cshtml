@@ -2,6 +2,10 @@
     Layout = null;
 }
 <div ng-controller="TreeController" class="tree">
+    <p>
+        <input type="number" name="name" value=" " ng-model="newVal" />
+        <button data-ng-click="add(newVal)" type="button" class="btn btn-info">Insert value in tree</button>
+    </p>
     <div>
         <ul>
             <li>
@@ -12,11 +16,6 @@
             </li>
         </ul>
     </div>
-    <p>
-        <input type="number" name="name" value=" " ng-model="newVal" />
-<button data-ng-click="add(newVal)" type="button" class="btn btn-info">Insert value in tree</button>
-    </p>
-
 </div>
 
 <div style="clear:both;"></div>
