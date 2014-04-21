@@ -1,20 +1,24 @@
 ﻿@{
     Layout = null;
 }
+<div ng-controller="TreeController" class="tree">
+    <div>
+        <ul>
+            <li>
+                <a href="#/tree">{{ data.treenode }}</a>
+                <ul>
+                    <li ng-repeat="item in data.childnodes track by $index" ng-include="'/home/treenodes'"></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <p>
+        <input type="number" name="name" value=" " ng-model="newVal" />
+<button data-ng-click="add(newVal)" type="button" class="btn btn-info">Insert value in tree</button>
+    </p>
 
-<div class="tree" ng-controller="TreeController">
-    <ul>
-        <li>
-            <a href="#/tree">{{treeClass.treenode}}</a>
-            <ul>
-                <li ng-repeat="item in treeClass.childnodes track by $index" ng-include="'/home/treenodes'"></li>
-            </ul>
-        </li>
-    </ul>
 </div>
-<div>
-    <p><button data-ng-click="treeClass.addnode(50)" type="button" class="btn btn-info">Insert randon value in tree</button></p>
-</div>
+
 <div style="clear:both;"></div>
 <p></p>
 
